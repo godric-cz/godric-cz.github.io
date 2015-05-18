@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<article>
+
+	<header>
+		<h1>
+			<a href="{{ page.url }}">{{ page.title }}</a>
+		</h1>
+		<time style="display:none" datetime="{{ page.date | date_to_xmlschema }}" pubdate></time>
+		<!-- možno page.author a page.meta atd (viz dokumentace) -->
+	</header>
+
+	{{ content }}
+
+</article>

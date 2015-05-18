@@ -1,0 +1,15 @@
+# Site settings
+title: Godrikův blog
+email: godric@korh.cz
+description: TODO (for Google search results) and in feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://godric.korh.cz" # the base hostname & protocol for your site
+# twitter_username: jekyllrb
+# github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
+kramdown:
+  smart_quotes:   sbquo,lsquo,bdquo,ldquo
+include: ["_bordel"]

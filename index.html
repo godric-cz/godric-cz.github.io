@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="claim">
+	Nejsem král popu.
+</div>
+
+{% for post in site.posts %}
+	<article>
+		<header>
+			<time class="post-date" datetime="{{ post.date | date_to_xmlschema }}" pubdate><span>
+				{{ post.date | date: "%b %-d, %Y" }}
+			</span></time>
+			<h1>
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</h1>
+		</header>
+		{{ post.content }}
+	</article>
+{% endfor %}
+
+<!--
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+-->
