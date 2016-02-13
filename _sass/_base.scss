@@ -48,6 +48,11 @@ img {
 	border-radius: 3px;
 }
 
+hr {
+  border: none;
+  border-top: solid 1px #ddd;
+}
+
 // code
 pre, code {
 	font-family: dejavu, monospace;
@@ -70,4 +75,17 @@ pre {
 		padding-left: 0;
 	}
 	width: auto;
+}
+
+// blockquote
+blockquote {
+	color: #666;
+	font-style: italic;
+	border-left: solid 0.3rem #999;
+	padding-left: 1rem;
+}
+
+// footnotes
+.footnotes {
+	font-size: 80%;
 }

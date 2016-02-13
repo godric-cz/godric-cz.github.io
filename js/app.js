@@ -49,4 +49,14 @@ $(function(){
 	// odkazy pryč do nových panelů
 	$('a[href^=http]:not([target]), a[href^=mailto]').attr('target', '_blank');
 
+	// scrollování footnotes
+	$('a.footnote, a.reversefootnote').click(function() {
+		var top = $(
+			$(this).attr('href').replace(':', '\\:')
+		).offset().top;
+		$('html,body').animate({ scrollTop: top }, 1000);
+		return false;
+	});
+
+
 });
