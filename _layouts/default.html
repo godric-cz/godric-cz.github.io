@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 
 	{% include head.html %}
 
@@ -10,6 +10,18 @@
 		{{ content }}
 
 		{% include footer.html %}
+
+		<script>
+			// add non-breaking spaces to hyphenated areas
+			// call here (and not add to window.load) to do asap to avoid flickering
+			vlna('article')
+
+			// odkazy pryč do nových panelů
+			var links = document.querySelectorAll('a[href^=http]:not([target]), a[href^=mailto]')
+			for (var i = 0; i < links.length; i++) {
+				links[i].setAttribute('target', '_blank')
+			}
+		</script>
 
 	</body>
 

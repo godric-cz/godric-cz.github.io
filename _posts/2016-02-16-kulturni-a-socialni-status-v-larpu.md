@@ -91,5 +91,5 @@ Je ovšem nezbytné vyvarovat se falešných představ o tomto přístupu. Obsaz
 Přestože to neradi přiznáváme, rozdíly statusu a hierarchie tu jsou a ovlivňují veškeré naše aktivity. Stejně jako ostatní společenské aktivity, i larpy jsou plné problémů týkajících se rovnoprávnosti. Vytvářejí naše larpy takovou sociální dynamiku, jakou chceme aby vytvářely? Na to neexistuje žádná zaručeně správná odpověď. Nejen že se liší naše hodnoty, ale dokonce hodnoty jakékoli dané struktury interpretujeme každý různě. Přes to má smysl se nad těmito problémy v dalším larpu, který budete hrát nebo organizovat, zamyslet.
 
 ________________
-[^1]: Ritual Discourse in Role-Playing Games. Dostupné na: [http://www.indie-rpgs.com/_articles/ritual_discourse_in_RPGs.html](http://www.indie-rpgs.com/_articles/ritual_discourse_in_RPGs.html)
+[^1]: Ritual Discourse in Role-Playing Games. Dostupné na: [http://www.&#8203;indie-rpgs.com/_articles/ritual_discourse_in_RPGs.html](http://www.indie-rpgs.com/_articles/ritual_discourse_in_RPGs.html)
 [^2]: Obdoba našeho maturitního plesu, v anglicky mluvících zemích je ovšem vnímán jako uvedení maturantů do vysoké společnosti spíš než oslava završení studia.

@@ -1,0 +1,84 @@
+
+body {
+    /* font-family: Linux Libertine, serif; *//* již nastaveno v hlavičce */
+    color: #333;
+    font-size: 20px; /* musí být na HTML kvůli správné fci rem */
+    line-height: 1.5;
+}
+@media (max-width:400px) { /* výchozí šířka + okraje na mobilu */
+    body {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+}
+
+p, blockquote, pre, ul, ol, dl, figure {
+    margin: 0 0 1.5rem 0;
+}
+
+p {
+    text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+h1 {
+    line-height: 1.2;
+    text-align: center;
+    font-weight: normal;
+    font-size: 2.3em;
+    margin: 1em 0;
+}
+h1 a { text-decoration: inherit; color: inherit; }
+h1 a:hover { text-decoration: underline; }
+
+h2 { margin: 0; }
+
+img {
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+}
+
+hr {
+    border: none;
+    border-top: solid 1px #ddd;
+}
+
+/* code */
+pre, code {
+    font-family: dejavu, monospace;
+    font-size: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+}
+code {
+    padding: 0.05rem 0.25rem;
+}
+pre {
+    tab-size: 4;
+    -moz-tab-size: 4;
+    padding: 0.4rem 0.6rem;
+    overflow: hidden;
+    width: auto;
+}
+pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* blockquote */
+blockquote {
+    color: #666;
+    font-style: italic;
+    border-left: solid 0.3rem #999;
+    padding-left: 1rem;
+}
+
+/* footnotes */
+.footnotes {
+    font-size: 80%;
+}
