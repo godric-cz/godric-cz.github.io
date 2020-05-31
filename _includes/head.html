@@ -34,8 +34,8 @@
 		}
 	</style>
 	<link rel="stylesheet" href="/assets/main.css">
+	{% comment %} TODO syntax highlighting? Možná nějakou detekcí IFem z obsahu stránky, je-li potřeba? {% endcomment %}
 
-	<!-- hyphenate -->
 	<script>
 		var Hyphenopoly = {
 			require: {
@@ -48,8 +48,9 @@
 			}
 		};
 	</script>
-	{% comment %} TODO images and smooth scrolling {% endcomment %}
+	{% comment %} Vlna by se dala upravit na asynchronní, ale díky synchronnímu loaderu níž pravděpodobně nic nestojí, a tudíž je to jedno. Spuští se ručně na konci <body>, toto by se při asynchronicitě taky muselo řešit. {% endcomment %}
 	<script src="/assets/vlna.js"></script>
+	{% comment %} Tento loader musí být synchronní, jinak problikává. {% endcomment %}
 	<script src="/assets/hyphenopoly/Hyphenopoly_Loader.js"></script>
 	<script src="https://files.korh.cz/pistats/js.js" async defer></script>
 </head>
