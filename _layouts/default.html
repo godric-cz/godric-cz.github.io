@@ -17,10 +17,19 @@
 			vlna('article')
 
 			// odkazy pryč do nových panelů
-			var links = document.querySelectorAll('a[href^=http]:not([target]), a[href^=mailto]')
-			for (var i = 0; i < links.length; i++) {
-				links[i].setAttribute('target', '_blank')
-			}
+			var extLinks = document.querySelectorAll('a[href^=http]:not([target]), a[href^=mailto]')
+			extLinks.forEach(e => e.setAttribute('target', '_blank'))
+
+			// TODO zvětšování obrázků (fce imgZoom?)
+
+			// scrollování a footnotes
+			document.querySelectorAll('a.footnote, a.reversefootnote').forEach(e => {
+				e.onclick = () => {
+					var id = e.getAttribute('href').replace('#', '')
+					document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
+					return false
+				}
+			})
 		</script>
 
 	</body>

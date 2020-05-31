@@ -5,7 +5,14 @@
 			<a href="/">další články</a>
 			&ensp;
 		{% endif %}
-		<a href="#" onclick="$('html,body').animate({ scrollTop: 0 }, 1000); return false">nahoru</a>
+		<a href="#" onclick="
+			window.scroll({
+				top: 0,
+				left: 0,
+				behavior: 'smooth'
+			})
+			return false
+		">nahoru</a>
 	</div>
 
 	<div style="border-top:solid 1px #ddd;padding-top:1em">
