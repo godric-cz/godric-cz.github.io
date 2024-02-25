@@ -30,6 +30,14 @@
 					return false
 				}
 			})
+
+			// popisky obrázků
+			document.querySelectorAll('p > img[alt]:not([alt=""]').forEach(e => {
+				var d = document.createElement('div')
+				d.className = 'imgcaption'
+				d.innerHTML = e.getAttribute('alt')
+				e.parentElement.append(d)
+			})
 		</script>
 
 	</body>

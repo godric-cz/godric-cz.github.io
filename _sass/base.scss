@@ -41,6 +41,13 @@ img {
     border-radius: 3px;
 }
 
+.imgcaption {
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    font-size: 90%;
+}
+
 hr {
     border: none;
     border-top: solid 1px #ddd;
@@ -63,11 +70,15 @@ pre {
     padding: 0.4rem 0.6rem;
     overflow: hidden;
     width: auto;
+    line-height: 1.0; // kvůli ascii artu
 }
 pre > code {
     border: 0;
     padding-right: 0;
     padding-left: 0;
+}
+pre > code:not(.language-asciiart) {
+    line-height: 1.5;
 }
 
 /* blockquote */

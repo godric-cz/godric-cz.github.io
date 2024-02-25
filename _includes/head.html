@@ -28,6 +28,10 @@
 			src: url('/assets/LinLibertine_RIah.ttf');
 			font-style: italic;
 		}
+		@font-face {
+			font-family: 'dejavu';
+			src: url('/assets/dejavu');
+		}
 
 		body {
 			font-family: Linux Libertine, serif;
@@ -52,5 +56,7 @@
 	<script src="/assets/vlna.js"></script>
 	{% comment %} Tento loader musí být synchronní, jinak problikává. {% endcomment %}
 	<script src="/assets/hyphenopoly/Hyphenopoly_Loader.js"></script>
+	{% unless site.url contains "localhost" %}
 	<script src="https://files.korh.cz/webstats/js.js" async defer></script>
+	{% endunless %}
 </head>
